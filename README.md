@@ -1,9 +1,7 @@
 # 🐳 docker-starter
-
-_Use this required starter pack for all assignments in [BEW 2.2: DevOps, Deployments &amp; Containers](https://make.sc/bew2.2). Follow the instructions below, and submit the resulting repository on [Gradescope](https://make.sc/trackbew2.2) by the assigned due date._
+*Use this required starter pack for all assignments in [BEW 2.2: DevOps, Deployments &amp; Containers](https://make.sc/bew2.2).*
 
 ## 📂 Project Files
-
 | Filename | Description |
 | -------- | ----------- |
 | `.gitignore` | General ignore file. Optimized for Python. |
@@ -12,35 +10,19 @@ _Use this required starter pack for all assignments in [BEW 2.2: DevOps, Deploym
 | `Dockerfile` | **Implement solutions in this file**. |
 | `README.md` | Replace this `README` with content describing the purpose of your project. |
 
-## 🏁 Get Started
-
-1. [Import an existing repository on GitHub](https://github.com/new/import).
-1. Under `Your old repository's clone URL`, paste `https://github.com/make-school-labs/docker-starter`.
-1. Name your repository according to the assignment instructions.
-    <img src="https://github.com/Make-School-Courses/BEW-2.2-Docker-DevOps-Deployments/blob/master/Images/import.png?raw=true" width="60%">
-1. Click `Begin Import`.
-1. Locally clone your new copy of the starter code.
-
 ## 📦 Building & Running
 
-| Variable | Description |
-| -------- | ----------- |
-| `USERNAME` | Your DockerHub username. |
-| `IMAGE_NAME` | Name of the repository created above. |
-| `CONTAINER_NAME` | Choose a name for this container.<br>Can be the same as `IMAGE_NAME`. |
-
 ### 1️⃣ Build
-
-_Builds the `Dockerfile` found at the current path (`.`)._
-
+*Builds the `Dockerfile` found at the current path (`.`).*
 ```bash
-$ docker build -t USERNAME/IMAGE_NAME .
+$ docker build -t noltron000/docker-history .
 ```
 
 ### 2️⃣ Run & Test
-
-_Runs the `IMAGE_NAME` image. Deletes the container after executing the `CMD`_.
-
+*Runs the `docker-history` image. Deletes the container after executing the `CMD`.*
 ```bash
-$ docker run --rm --name CONTAINER_NAME IMAGE_NAME
+$ #                      container name
+$ #                      ↓↓↓↓↓↓↓↓↓↓↓↓↓↓  image name on dockerhub
+$ #                      ↓↓↓↓↓↓↓↓↓↓↓↓↓↓  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+$ docker run --rm --name docker-history noltron000/docker-history
 ```
