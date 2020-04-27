@@ -26,3 +26,8 @@ $ #                      ↓↓↓↓↓↓↓↓↓↓↓↓↓↓  image name 
 $ #                      ↓↓↓↓↓↓↓↓↓↓↓↓↓↓  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 $ docker run --rm --name docker-history noltron000/docker-history
 ```
+### Push to Dockerhub
+*Pushes the `docker-history` image to dockerhub.*
+```bash
+$ docker push noltron000/docker-history:latest
+```
